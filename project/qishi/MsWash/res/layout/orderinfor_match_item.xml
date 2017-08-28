@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/orderinfor_match_item_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="16dp"
+        android:text="牛仔裤"
+        android:textColor="@color/color666666"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:id="@+id/orderinfor_match_item_num_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="39dp"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/orderinfor_match_item_type"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/orderinfor_match_item_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="122345456"
+            android:textColor="@color/color666666"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_marginRight="30dp"
+            android:id="@+id/orderinfor_match_item_scan"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/scan_icon" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/orderinfor_match_item_input"
+        android:layout_width="180dp"
+        android:layout_height="32dp"
+        android:layout_alignLeft="@id/orderinfor_match_item_num_parent"
+        android:layout_below="@id/orderinfor_match_item_num_parent"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/search_bg"
+        android:gravity="center_vertical"
+        android:hint="洗衣店衣物标识码"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:textColorHint="@color/color999999"
+        android:textSize="15sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ms_1px"
+        android:layout_below="@id/orderinfor_match_item_input"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/color999999" />
+
+</RelativeLayout>

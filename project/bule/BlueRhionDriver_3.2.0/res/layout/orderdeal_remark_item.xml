@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/remark_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLength="6"
+        android:background="@drawable/textview_blue_border_selector"
+        android:gravity="center"
+        android:text="需要小推车"
+        android:textColor="#00A7E3"
+        android:textSize="@dimen/_12sp" />
+
+</LinearLayout>

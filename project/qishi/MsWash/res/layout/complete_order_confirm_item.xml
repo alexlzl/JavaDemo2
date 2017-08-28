@@ -1,0 +1,263 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- 滑动底部布局 -->
+
+    <LinearLayout
+        android:id="@+id/complete_order_confirm_item_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:gravity="right" >
+
+        <Button
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:visibility="visible"
+            android:id="@+id/complete_order_confirm_item_scanrepeat"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#29ABE2"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="重新扫码"
+            android:textColor="@color/white"
+            android:textSize="16sp" >
+        </Button>
+
+        <Button
+            android:id="@+id/complete_order_confirm_item_remove"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorff0000"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="删 除"
+            android:textColor="@color/white"
+            android:textSize="16sp" >
+        </Button>
+    </LinearLayout>
+    <!-- 默认上层显示布局 -->
+
+    <RelativeLayout
+        android:id="@+id/complete_order_confirm_item_front"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="visible" >
+
+        <!-- 上部分区域 -->
+
+        <RelativeLayout
+            android:id="@+id/complete_order_confirm_item_topparent"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="55dp"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/complete_order_confirm_item_leftparent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/complete_order_confirm_item_arrow"
+                        android:layout_width="7dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:src="@drawable/home_orderlist_arrow" />
+
+                    <TextView
+                        android:id="@+id/complete_order_confirm_item_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="6dp"
+                        android:layout_toRightOf="@id/complete_order_confirm_item_arrow"
+                        android:text="短袖"
+                        android:textColor="@color/color666666"
+                        android:textSize="17sp" />
+
+                    <CheckBox
+                        android:id="@+id/complete_order_confirm_item_check_one"
+                        style="@style/check_box_style"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@id/complete_order_confirm_item_type"
+                        android:background="@drawable/check_one_price"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@+id/complete_order_confirm_item_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="35dp"
+                        android:layout_toRightOf="@id/complete_order_confirm_item_check_one"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="123456123456123456123456123456123456"
+                        android:textColor="@color/color666666"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="42dp"
+                    android:layout_marginTop="6dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="破洞，少扣破洞，少扣破洞，少扣破洞，少扣破洞，少扣破洞，少扣破洞，少扣破洞，少扣"
+                    android:textColor="@color/color999999"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp" >
+
+                <Button
+                    android:id="@+id/complete_order_confirm_item_check"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/usercenter_write_yes"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/complete_order_confirm_item_scan"
+                    android:layout_width="29dp"
+                    android:layout_height="29dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/scan_icon" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 隐藏区域 -->
+
+        <RelativeLayout
+            android:id="@+id/complete_order_confirm_item_hideparent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/complete_order_confirm_item_topparent"
+            android:background="@color/colorf2f2f2"
+            android:paddingBottom="14dp"
+            android:visibility="visible" >
+
+            <ImageView
+                android:layout_width="14dp"
+                android:layout_height="7dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="33dp"
+                android:src="@drawable/arrow_down_white" />
+
+            <LinearLayout
+                android:id="@+id/complete_order_confirm_item_checkparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_checkone"
+                    style="@style/confirm_order_notcheck"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:text="发黑"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_checktwo"
+                    style="@style/confirm_order_notcheck"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="油渍"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_checkthree"
+                    style="@style/confirm_order_notcheck"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="磨损"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_checkfour"
+                    style="@style/confirm_order_notcheck"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="破损"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/complete_order_confirm_item_checkfive"
+                    style="@style/confirm_order_notcheck"
+                    android:layout_width="46dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center"
+                    android:text="少扣"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_below="@id/complete_order_confirm_item_checkparent"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/edittext_bg_solid_white" >
+
+                <EditText
+                    android:id="@+id/complete_order_confirm_item_checkt_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_toLeftOf="@+id/complete_order_confirm_item_checkt_over_bt"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="其他备注"
+                    android:paddingLeft="13dp"
+                    android:textColorHint="@color/colorb3b3b3"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/complete_order_confirm_item_checkt_over_bt"
+                    android:layout_width="33dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/confirm_order_check_over" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

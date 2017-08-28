@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fg_userinfo_bg" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/head_bg"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/myinfo_bg_bitmap" >
+
+            <RelativeLayout
+                android:id="@+id/driver_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" >
+
+                <cn.bluerhino.driver.view.CircleView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:padding="5dp" />
+
+                <cn.bluerhino.driver.view.CircleNetImage
+                    android:id="@+id/driver_img"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/driver_default_circle_icon"
+                    android:padding="5dp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/driver_icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp" >
+
+                <TextView
+                    android:id="@+id/myinfo_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/myinfo_username"
+                    android:layout_centerHorizontal="true"
+                    android:paddingTop="5dp" >
+
+                    <TextView
+                        android:id="@+id/licence_plate_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/myinfo_carname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:textColor="@color/main_text_color"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/myinfo_exit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/driver_icon"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/myinfo_exit"
+                android:contentDescription="@null"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:baselineAligned="false"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/info_his_orderlist"
+                style="@style/myinfo_info_buttom_bg" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <!-- 总单数 -->
+                    <TextView
+                        android:id="@+id/info_total_orders"
+                        style="@style/myinfo_info_total_style"/>
+                    
+                    <!-- 本日单数 -->
+                    <TextView
+                        android:id="@+id/info_today_orders"
+                        style="@style/myinfo_info_total_style" />
+
+                    <TextView
+                        style="@style/myinfo_info_buttom_total_style"
+                        android:text="@string/myinfo_order_counts" />
+                </LinearLayout>
+
+                <View style="@style/vertical_line_userinfo" />
+            </LinearLayout>
+
+            <!-- 累计收入 -->
+
+            <LinearLayout
+                android:id="@+id/info_total_revenue_bar"
+                style="@style/myinfo_info_buttom_bg" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+
+                    <!-- 总收入 -->
+                    <TextView
+                        android:id="@+id/info_total_revenue"
+                        style="@style/myinfo_info_total_style"/>
+                    
+                    <!-- 本日收入 -->
+                    <TextView
+                        android:id="@+id/info_today_revenue"
+                        style="@style/myinfo_info_total_style"/>
+
+                    <TextView
+                        style="@style/myinfo_info_buttom_total_style"
+                        android:text="@string/myinfo_order_sum" />
+                </LinearLayout>
+
+                <View style="@style/vertical_line_userinfo" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/myinfo_cus_ratings_page"
+                style="@style/myinfo_info_buttom_bg"
+                android:gravity="center"
+                android:orientation="vertical" >
+                   <TextView
+                       style="@style/myinfo_info_total_style"
+                       android:text="@string/myinfo_dri_lv" />
+                   <TextView
+                       android:id="@+id/info_coment_level"
+                       style="@style/myinfo_info_total_style" />
+                   <TextView
+                       style="@style/myinfo_info_buttom_total_style"
+                       android:text="@string/myinfo_customer_ratings" />
+            </LinearLayout>
+        </LinearLayout>
+                   
+        <include layout="@layout/divider_line"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+
+                    <!-- 隐藏行:个人信息 -->
+                    <LinearLayout
+                       android:id="@+id/dri_announcement_layout"
+                        style="@style/myinfo_item_style" >
+                        <TextView
+                            style="@style/myinfo_item_first_col_style.myinfo_item_second_col_style"
+                            android:textColor="@color/font_notification_red"
+                            android:text="@string/myinfo_announcement" />
+                    </LinearLayout>
+                    
+                    <!-- 第一行:个人信息 -->
+
+                    <include layout="@layout/divider_line"/>
+
+                    <LinearLayout
+                        android:id="@+id/myinfo_viewmyinfo"
+                        style="@style/myinfo_item_style" >
+
+                        <TextView
+                            style="@style/myinfo_item_first_col_style"
+                            android:text="@string/myinfo_driver_info" />
+
+                        <TextView
+                            android:id="@+id/personinfo_status"                            
+                            style="@style/myinfo_item_first_right_col_style"
+                            />
+                    </LinearLayout>
+
+                    <!-- 第二行:推荐客户 -->
+                    <include layout="@layout/divider_line"/>
+                    <LinearLayout
+                        android:id="@+id/myinfo_invite_users"
+                        style="@style/myinfo_item_style" >
+
+                        <TextView
+                            style="@style/myinfo_item_first_col_style.myinfo_item_second_col_style"
+                            android:text="@string/myinfo_invite_users" />
+
+                    </LinearLayout>
+                    
+                    <!-- 第三行:司机排名 -->
+                    <include layout="@layout/divider_line"/>
+                    <LinearLayout
+                        android:id="@+id/myinfo_ranking"
+                        style="@style/myinfo_item_style" >
+
+                        <TextView
+                            style="@style/myinfo_item_first_col_style"
+                            android:text="@string/myinfo_ranking" />
+
+                        <TextView
+                            android:id="@+id/driver_ranking"
+                            style="@style/myinfo_item_first_right_col_style"
+                            />
+                    </LinearLayout>
+
+                    <include layout="@layout/divider_line"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/url_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical" >
+                    <LinearLayout
+                        android:id="@+id/myinfo_update"
+                        style="@style/myinfo_item_style" >
+
+                        <TextView
+                            android:id="@+id/myinfo_version"
+                            style="@style/myinfo_item_first_col_style"
+                            android:text="@string/myinfo_version"/>
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/myinfo_check_update"
+                            android:gravity="right"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/warn_text_color" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:contentDescription="@null"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+     
+    <RelativeLayout 
+        android:id="@+id/curtain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_rhino_anim_bg"
+        android:visibility="gone"> 
+        	<include layout="@layout/loading_animators" />
+    </RelativeLayout> 
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">骑士客户端</string>
+    <string name="refresh">刷新</string>
+    <string name="back">返回</string>
+    <string name="app_list_footer_more">更多</string>
+    <string name="app_list_footer_loading">正在加载</string>
+    <string name="exit_title">温馨提示</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="input_pay_password">请输入您的支付密码</string>
+    <string name="today">今天</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+    <string name="loading_data">努力加载中</string>
+    <string name="upgrade_is_loading">正在下载</string>
+    <string name="has_downed">已下载</string>
+    <string name="downed_complete">已下载完成</string>
+    <string name="download_fail">下载失败</string>
+    <string name="please_try_later">请稍后重试</string>
+    <!-- 检查更新 -->
+    <string name="not_new_version">已经是最新版本</string>
+    <string name="have_new_version">发现新版本</string>
+    <string name="update">升级更新</string>
+    <!-- 错误、异常、消息类 -->
+    <string name="connection_time_out">连接超时，请稍后重试</string>
+    <string name="connection_info">连接失败，请稍后重试</string>
+    <string name="server_error">系统繁忙中,</string>
+    <string name="network_closed">请设置一下网络在继续吧</string>
+    <string name="parameter_is_null">参数为空</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="error_title">异常上传</string>
+    <string name="error_content">请将错误信息上传给开发者</string>
+    <string name="error_ok">确定</string>
+    <string name="error_not_know">未知错误</string>
+    <string name="error_note">休息一下再来试试吧!</string>
+    <string name="error_check_tv">重新加载</string>
+    <string name="null_content">暂无相关内容</string>
+    <string name="error_network">网络问题</string>
+    <string name="set_network">请设置一下网络再继续吧！</string>
+    <string name="setting">设置</string>
+    <string name="scan_text">对准条码/二维码，即可自动扫描</string>
+    <string name="login_title">社区邦快递员管理系统</string>
+    <string name="homepage_carcapacity">车载容量</string>
+    <string name="exit_message">再按一次返回键退出骑士</string>
+
+    <item name="item_id" type="id"></item>
+    <item name="order_addnum_id" type="id"></item>
+    <item name="order_reducenum_id" type="id"></item>
+
+</resources>

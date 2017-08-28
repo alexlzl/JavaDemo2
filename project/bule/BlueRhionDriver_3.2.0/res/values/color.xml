@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- main table itme being. -->
+    <color name="actionbar_bg">#2584db</color>
+    <color name="main_tab_item_text_color">#ffffff</color>
+    <color name="main_tab_item_bg_nor">#ffffff</color>
+    <color name="main_tab_item_bg_sec">#fc5b21</color>
+    <!-- main table itme end. -->
+
+
+    <!-- my info begin -->
+    <color name="myinfo_vertical_divider_color">#F6F6F6</color>
+    <color name="myinfo_horizontal_divider_color">#EBEBEB</color>
+    <color name="myinfo_row_text_color">#7E7E7E</color>
+    <!-- my info end -->
+
+
+    <!-- 司机登陆页新资源 -->
+    <color name="login_bg_color">#39A1E8</color>
+    <color name="login_font_color">#39A1E8</color>
+
+    <!-- like netease begin -->
+    <color name="black">#000000</color>
+    <color name="pull_refresh_textview">#000000</color>
+    <color name="gold">#000000</color>
+    <color name="transparent">#00000000</color>
+    <!-- like netease end -->
+
+
+    <!-- umeng begin -->
+    <color name="umeng_fb_color_btn_pressed">#1495F7</color>
+    <color name="umeng_fb_color_btn_normal">#333333</color>
+    <!-- umeng end -->
+
+
+    <!-- 1.0 begin -->
+    <color name="libs_loading_text_color">#ffffffff</color>
+    <!-- 1.0 end -->
+
+
+    <!-- 主要文字颜色 -->
+    <color name="main_text_color">#4F5F6F</color>
+    <!-- 提示文字颜色 -->
+    <color name="prompt_text_color">#969696</color>
+    <!-- 提示文字颜色(blue) -->
+    <color name="prompt_text_blue_color">#0000FF</color>
+    <!-- 警告文字颜色 -->
+    <color name="warn_text_color">#FD6138</color>
+    <color name="font_black">#000000</color>
+    <color name="font_while">#FFFFFF</color>
+    <color name="bg_black">#000000</color>
+    <color name="bg_while">#FFFFFF</color>
+    <color name="bg_gainsboro">#DCDCDC</color>
+
+    <!-- 次要的灰白背景色 -->
+    <color name="bg_second">#FBFBFB</color>
+    <color name="actionbar_blue_bg">#00A4E3</color>
+
+    <!-- 常用的灰色 -->
+    <color name="commonly_gray">#D1D1D1</color>
+    <!-- ActionBar的灰色 -->
+    <color name="commonly_actionbar_gray">#F8F8F8</color>
+    <!-- ActionBar的文字颜色 -->
+    <color name="commonly_actionbar_font_color">#444444</color>
+
+    <!-- 抢单按钮按下和不可点的颜色 -->
+    <color name="gainsboro">#DCDCDC</color>
+
+    <!-- 登陆页color -->
+    <!-- 犀牛动画背景 -->
+    <color name="login_rhino_anim_bg">#03000000</color>
+
+    <!-- 个人信息activity页 -->
+    <color name="myinfo_left_pressed_bg">#3FBCE6</color>
+    <color name="myinfo_pressed_bg">#F5FCFF</color>
+    <!-- 服务单数按下color -->
+    <color name="myinfo_hor_pressed_bg">#E8F6FC</color>
+
+    <!-- tabwidget未选中color -->
+    <color name="tab_widget_not_selected">#4F5F6F</color>
+    <!-- tabwidget被选中color -->
+    <color name="tab_widget_selected">#39b7e0</color>
+    <color name="could_accept_order">#FCFF00</color>
+
+    <!-- fragment_userinfo -->
+    <color name="fg_userinfo_bg">#EEEEEE</color>
+    
+    <!-- 公告通知的颜色 -->
+    <color name="font_notification_red">#f30a20</color>
+    
+    <!-- 订单列表fragment背景色 -->
+    <color name="fragment_bg">#f1f1f1</color>
+    
+    <color name="white">#ffffff</color>
+    <color name="sf_gray_bb">#bbbdc1</color>
+    
+    <color name="wait_list_location_back">#66c8ee</color>
+    <color name="wait_list_Liner_location_back">#0099cc</color>
+
+</resources>

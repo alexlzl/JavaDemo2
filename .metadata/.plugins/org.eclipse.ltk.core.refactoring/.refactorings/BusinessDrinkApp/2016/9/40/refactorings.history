@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BusinessDrinkApp/raw/hehe_server_pfx.pfx&apos; to &apos;hehe_server_pfx1.pfx&apos;" description="Rename resource &apos;hehe_server_pfx.pfx&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="raw/hehe_server_pfx.pfx" name="hehe_server_pfx1.pfx" stamp="1474817093702" updateReferences="true"/>
+</session>

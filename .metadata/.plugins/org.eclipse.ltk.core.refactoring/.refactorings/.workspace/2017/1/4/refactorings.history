@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;字符串&apos; to &apos;常量池&apos;&#x0A;- Original element: &apos;字符串&apos;&#x0A;- Renamed element: &apos;字符串&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;字符串&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=字符串" name="常量池" references="true" stamp="1485228635205" version="1.0"/>
+</session>

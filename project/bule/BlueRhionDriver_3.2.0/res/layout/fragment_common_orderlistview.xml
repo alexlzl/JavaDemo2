@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/cn.bluerhino.driver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1" >
+
+    <cn.bluerhino.driver.view.SingleLayoutListView
+        android:id="@+id/fragment_history_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:dividerHeight="10dp"
+        android:divider="#f1f1f1"
+        android:fadingEdgeLength="0dp" />
+
+    <include layout="@layout/loading_animators" />
+
+</RelativeLayout>

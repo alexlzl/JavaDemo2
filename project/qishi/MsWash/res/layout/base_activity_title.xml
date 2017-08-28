@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 顶部标题栏布局 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/base_activity_title_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:background="@color/color26cbb2"
+    android:orientation="vertical" >
+
+    <!-- 左侧布局 -->
+
+    <ImageView
+        android:id="@+id/base_activity_title_backicon"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/title_back" />
+
+    <TextView
+        android:id="@+id/base_activity_title_titlename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/white"
+        android:textSize="17sp" />
+
+    <!-- 右侧布局 -->
+
+    <LinearLayout
+        android:id="@+id/base_activity_title_right_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:gravity="center_horizontal"
+        android:paddingRight="17dp" >
+
+        <!-- 左侧图标 -->
+
+        <ImageView
+            android:id="@+id/base_activity_title_right_lefticon"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:visibility="gone" />
+        <!-- 中间图标 -->
+
+        <ImageView
+            android:id="@+id/base_activity_title_right_middleicon"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:visibility="gone" />
+        <!-- 右侧图标 -->
+
+        <ImageView
+            android:id="@+id/base_activity_title_right_righticon"
+            android:layout_width="23dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:clickable="true"
+            android:contentDescription="@string/app_name"
+            android:focusable="true"
+            android:visibility="gone" />
+
+        <!-- 右侧文本 -->
+
+        <TextView
+            android:id="@+id/base_activity_title_right_righttv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/base_title_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ms_1px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/colore4e4e4" />
+
+</RelativeLayout>

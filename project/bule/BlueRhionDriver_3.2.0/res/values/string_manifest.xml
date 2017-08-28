@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 处理窗口描述 -->
+    <string name="manifest_window_desc">请使用蓝犀牛打开</string>
+    
+    <string name="schema_br">bluerhiondriver</string>
+    <string name="schema_inner_br">br</string>
+    <string name="host_native">native</string>
+    <string name="host_wap">wap</string>
+    
+    <!-- 首页四个fragment -->
+    <string name="path_competitionList">/competitionList</string>
+    <string name="path_currentList">/currentList</string>
+    <string name="path_customerPage">/customerPage</string>
+    <string name="path_personInfo">/personInfo</string>
+    
+    <string-array name="array_main_url">
+        <item>@string/path_competitionList</item>
+        <item>@string/path_currentList</item>
+        <item>@string/path_customerPage</item>
+        <item>@string/path_personInfo</item>
+    </string-array>
+    
+    <!-- activity 历史订单 -->
+    <string name="path_historyList">/historyList</string>
+    
+    <!-- wap 账户信息 -->
+    <string name="path_myAccount">/myAccount</string>
+    <!-- wap 账户详情 -->
+    <string name="path_accountDetail">/accountDetail</string>
+    <!-- wap 顾客评分 -->
+    <string name="path_commentInfo">/commentInfo</string>
+    <!-- wap 推荐客户 -->
+    <string name="path_invite">/invite</string>
+    
+    <string-array name="array_wap_url">
+        <item>@string/path_myAccount</item>
+        <item>@string/path_accountDetail</item>
+        <item>@string/path_commentInfo</item>
+        <item>@string/path_invite</item>
+    </string-array>
+    
+    <!-- 抢单详情页面  -->
+    <string name="path_competitionDetail">/competitionDetail</string>
+    
+    <!-- 处理订单service -->
+    <string name="label_dealwith_order">订单维护服务(请勿停止)</string>
+        
+    <!-- wap 自定义页面 -->
+    <string name="path_wap">/wap</string>
+    
+</resources>

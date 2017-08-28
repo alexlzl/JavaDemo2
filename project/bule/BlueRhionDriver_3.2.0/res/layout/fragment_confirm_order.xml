@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_title"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/confirmorder_title_layout_bg_style"
+                    android:background="#f3f4f2" >
+
+                    <TextView
+                        style="@style/confirmorder_title_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginStart="12dp"
+                        android:text="@string/service_infos"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_first_left_layout_style"
+                        android:text="@string/service_miles"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/distance"
+                        style="@style/confirmorder_item_first_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_left_layout_style"
+                        android:singleLine="true"
+                        android:text="@string/service_wait_time"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/wait_time"
+                        style="@style/confirmorder_item_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_left_layout_style"
+                        android:singleLine="true"
+                        android:text="@string/service_night_period"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/night_period"
+                        style="@style/confirmorder_item_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    style="@style/confirmorder_title_layout_bg_style"
+                    android:background="#f3f4f2" >
+
+                    <TextView
+                        style="@style/confirmorder_title_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="12dp"
+                        android:text="@string/pay_infos"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_first_left_layout_style"
+                        android:singleLine="true"
+                        android:text="@string/total_charge"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/total_charge"
+                        style="@style/confirmorder_item_first_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="32dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_left_layout_style"
+                        android:singleLine="true"
+                        android:text="@string/payed"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/payed"
+                        style="@style/confirmorder_item_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/confirmorder_item_left_layout_style"
+                        android:singleLine="true"
+                        android:text="@string/not_pay"
+                        android:textColor="#969696"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/not_pay"
+                        style="@style/confirmorder_item_right_layout_style"
+                        android:singleLine="true"
+                        android:textColor="#4F5F6F"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View style="@style/seperate_line_gray" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+        <Button
+            android:id="@+id/paymode_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/rectangle_discount_num_bg"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/cash_receipts"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+
+</LinearLayout>

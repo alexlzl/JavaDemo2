@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/common_title"/>
+
+    <cn.bluerhino.driver.view.framework.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/realtabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@android:color/white" />
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0"
+                android:visibility="gone" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:orientation="horizontal"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/order_deal_tabbar_group"
+                android:layout_width="match_parent"
+                android:layout_height="150px"
+                android:layout_gravity="bottom"
+                android:background="@color/main_tab_item_bg_nor"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/order_deal_lefttab_item"
+                    style="@style/order_flow_bottom_style"
+                    android:layout_width="0dp"
+                    android:layout_height="150px"
+                    android:layout_weight="3"
+                    android:background="#f8600f"
+                    android:checked="true"
+                    android:text="服务完成" />
+
+                <Button
+                    android:id="@+id/order_deal_righttab_item"
+                    style="@style/order_flow_bottom_style"
+                    android:layout_width="0dp"
+                    android:layout_height="150px"
+                    android:layout_weight="2"
+                    android:background="#1b82de"
+                    android:text="再次出发" />
+            </LinearLayout>
+        </LinearLayout>
+    </cn.bluerhino.driver.view.framework.FragmentTabHost>
+
+</LinearLayout>

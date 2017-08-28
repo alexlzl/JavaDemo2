@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.minsheng.app.view.MsRefreshListView
+        android:id="@+id/usercenter_mymessage_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </com.minsheng.app.view.MsRefreshListView>
+
+</RelativeLayout>

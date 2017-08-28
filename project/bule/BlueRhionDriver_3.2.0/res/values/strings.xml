@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">蓝犀牛司机端</string>
+
+    <!-- actionbar begin -->
+    <string name="activity_order_state">订单详情</string>
+    <string name="activity_order_response">订单响应</string>
+    <!-- actionbar end -->
+
+
+    <!-- main begin -->
+    <string name="main_tab_item_activity">宝箱活动</string>
+    <string name="main_tab_item_cur">当前订单</string>
+    <string name="main_tab_item_his">历史订单</string>
+    <string name="main_tab_item_my">个人信息</string>
+    <string name="main_tab_item_wait">抢单列表</string>
+    <string name="nomoredata">没有更多数据</string>
+    <string name="main_act_stoporders">停止接单</string>
+    <string name="main_tab_jump_failure">页面跳转失效</string>
+
+    <!-- logoin beign -->
+    <string name="login_username_hint">请输入手机号</string>
+    <string name="login_password_hint">请输入您的密码</string>
+    <string name="login_memorize_password">记住我</string>
+    <string name="login_forget_password">忘记密码</string>
+    <string name="login_button_login">登录</string>
+    <string name="login_servererror">服务器未知错误</string>
+    <string name="login_rquest_userinfo_failure">获取个人信息失败</string>
+    <string name="logoin_timeout">登录超时</string>
+    <string name="login_reg_newuser">创建新用户</string>
+    <string name="login_username_toast">请填写手机号</string>
+    <string name="login_short_number">手机号长度小于11位,请重新填写</string>
+    <string name="login_number_hint">请填写手机号</string>
+    <string name="login_pwd_hint">密码不能为空</string>
+    <string name="login_check_network">检查网络中…</string>
+    <string name="login_cannot_login">无法登陆</string>
+    <string name="login_double_exit">再按一次退出</string>
+    <string name="login_error">登陆失败,请重试登陆</string>
+
+    <!-- register -->
+    <string name="register_get_smdcode">获取验证码</string>
+    <string name="register_hint_inputcode">请输入验证码</string>
+    <string name="register_hint_setyourpwd">请设置您的密码</string>
+    <string name="login_button_register">注册</string>
+    <string name="register_newdriver_quest">新司机注册</string>
+    <string name="register_forget_pwd">忘记密码</string>
+    <string name="reset_and_login">重置密码</string>
+    <string name="register_recommend">市场人员推荐 </string>
+    <string name="register_recommend_default">请输入市场人员编号，可以不填写</string>
+    <!-- RegisterActivityr -->
+    <string name="register_enter_phone">请填写手机号</string>
+    <string name="register_enter_code">请填写验证码</string>
+    <string name="register_code_less">验证码长度不足4位</string>
+    <string name="register_enter_pwd">请填写密码</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_loading">注册中</string>
+    <string name="register_process">处理中</string>
+    <string name="register_repeat">该用户已存在,请勿重复注册</string>
+    <string name="register_code_sent">验证码发送成功请注意查收</string>
+    <!-- FindPasswordActivity -->
+    <string name="findpwd_get_pwd">找回密码成功,请重新登录</string>
+    <string name="findpwd_loading">找回密码中&#8230;</string>
+    <string name="findpwd_nonexistent_uesr">该用户不存在,请注册</string>
+
+    <!-- current order being -->
+    <string name="place_of_dispatch">发货地:</string>
+    <string name="place_of_receipt">收货地: </string>
+    <string name="place_of_receipt_format">收货地%1$d:</string>
+    <string name="order_number">订单号:</string>
+    <string name="pay_info">收款信息:</string>
+    <string name="particulars_of_goods">货物内容:</string>
+    <string name="expects_mileage">预计里程:</string>
+    <string name="time_of_delivery">发货时间:</string>
+    <string name="the_order_remarks">订单备注:</string>
+    <string name="orderstate_needdelivery">抢单</string>
+    <string name="orderstate_cannotgetorder">不可抢单</string>
+    <string name="orderstate_requestcommitsucceed">待用户选择</string>
+    <string name="orderstate_waitaffirm">待用户确认</string>
+    <string name="orderstate_waitresponse">等待响应</string>
+    <string name="orderstate_waitservice">等待服务</string>
+    <string name="orderstate_response_order">响应订单</string>
+    <string name="orderstate_deliverdeparture">司机出发</string>
+    <string name="orderstate_reachshipaddress">当前抵达发货地，正在计算等待时间</string>
+    <string name="orderstate_deliver_calculate_waittime">已从发货地出发</string>
+    <string name="orderstate_take_calculate_waittime">从收货地出发</string>
+    <string name="orderstate_servicestart">服务开始</string>
+    <string name="orderstate_departureshipaddress">已到达收货地，正在计算等待时间</string>
+    <string name="orderstate_reachplaceofreceipt">到达收货地</string>
+    <string name="orderstate_departurereceipt">从收货地出发</string>
+    <string name="orderstate_servicefinish">服务结束</string>
+    <string name="orderstate_ordercance">订单取消</string>
+    <string name="orderstate_orderfinish">订单完成</string>
+    <string name="paystate_chargeconsignor">%1$s元(向发货人收款)</string>
+    <string name="paystate_chargeconsignee">%1$s元(向收货人收款)</string>
+    <string name="paystate_chargeconother">不收现金</string>
+    <string name="update_order_exception">更新订单列表失败，请重试</string>
+    <string name="server_unknow_error">服务器未知错误</string>
+    <string name="orderstate_try_restart_app">导航组件未能启用,请尝试重新点击或退出后重新打开司机端</string>
+    <string name="orderstate_restart_failure">订单已失效,请确认该订单是否存在</string>
+    <string name="orderstate_ordernum_failure">该订单已失效,下次一定要手快</string>
+    <string name="orderstate_order_timeout">糟糕, 订单已被抢走了</string>
+    <!-- current order end -->
+
+
+    <!-- response order being -->
+    <string name="response_ordernumber_format">订单号:%1$s</string>
+    <string name="response_transtime_format">发货时间:%1$s</string>
+    <string name="response_payinfo_format">收款信息:%1$s</string>
+    <string name="response_itemnumber_format">货物数量:%1$s</string>
+    <string name="response_pickupman_format">发货人:%1$s</string>
+    <string name="response_pickupaddress_format">发货地址:%1$s</string>
+    <string name="response_takepman_format">收货人:%1$s</string>
+    <string name="response_takepman_title">收货人:</string>
+    <string name="response_deliveraddress_format">收货地址%1$d:%2$s</string>
+    <string name="response_takepman_phone_title">收货人联系方式:</string>
+    <string name="response_takepman_arrivetime_format">收货时间:%1$s</string>
+    <string name="response_go">出发</string>
+    <string name="response_finish">完成</string>
+    <string name="response_request_exception">提交失败，请重试</string>
+    <string name="response_confirm">确定</string>
+    <string name="response_cancel">取消</string>
+    <!-- response order end -->
+
+
+    <!-- UserInfoFragment -->
+    <string name="myinfo_login_again">登陆超时,请重新登录</string>
+    <string name="myinfo_exit_app">退出应用</string>
+    <string name="myinfo_ok">确定</string>
+    <string name="myinfo_cancel">取消</string>
+    <string name="myinfo_driver_invite">推荐客户</string>
+    <string name="myinfo_order_rank">本月订单数排名</string>
+    <string name="myinfo_customer_grade">顾客评分</string>
+    <string name="myinfo_approved">审核通过</string>
+    <string name="myinfo_driver_ranking">本周第%1$s名</string>
+    <string name="myinfo_unselected_cartype">车型未选择</string>
+    <string name="myinfo_no_data">暂无数据</string>
+    <string name="myinfo_machine_information_suffix">"&amp;deviceid=%1$s&amp;fr=%2$s"</string>
+    <string name="myinfo_umeng_no_update">当前已是最新版.</string>
+    <string name="myinfo_umeng_need_net_update">请连接无线网络后进行更新.</string>
+    <string name="myinfo_umeng_timeout_update">连接超时，请稍候重试.</string>
+    <string name="myinfo_total_orders">总单数:%1$d单</string>
+    <string name="myinfo_today_orders">本日单数:%1$d单</string>
+    <string name="myinfo_total_revenue">总收入:%.2f元</string>
+    <string name="myinfo_today_revenue">本日收入:%.2f元</string>
+    <string name="myinfo_dri_lv">我的评分</string>
+    <string name="myinfo_comment_lv">%1$s分</string>
+
+    <!-- fragment_userinfo -->
+    <string name="myinfo_order_counts">历史单数</string>
+    <string name="myinfo_order_sum">提现</string>
+    <string name="myinfo_customer_ratings">顾客评分</string>
+    <string name="myinfo_driver_info">个人信息</string>
+    <string name="myinfo_invite_users">推荐客户</string>
+    <string name="myinfo_ranking">司机排名</string>
+    <string name="myinfo_version">当前版本:</string>
+    <string name="myinfo_check_update">检查更新</string>
+    <string name="myinfo_announcement">公告通知</string>
+
+    <!-- 1.0 begin -->
+    <string name="order_deal_normal_nitice">你确定%s吗?</string>
+    <string name="order_deal_unfinish_deliver">请注意：此订单预计%1$d个收货地，您已服务 %2$d 个收货地，现在完成，行程与订单不符，是客户要求变更吗?变更后，将以实际行驶里程计费，请予客户知晓。</string>
+    <string name="order_deal_againdeparture">请注意：此订单只有 %1$d 个收货地，再次出发，行程与订单不符，是客户要求变更吗?变更后，将以实际行驶里程计费，请予客户知晓。</string>
+    <string name="order_deal_payinfo_deliver">请您注意：该订单需要向收货人收款%1$s元。收款后才可以进行下一步操作。现在去收款吗?</string>
+    <string name="order_deal_payinfo_pickup">请您注意：该订单需要向发货人收款%1$s元。收款后才可以进行下一步操作。现在去收款吗?</string>
+    <string name="order_deal_paytoast">注意:如果收取的金额与应收取金额不符，请联系运控，否则您需要承担收款错误带来的损失。</string>
+    <string name="order_deal_waituseraffirm">请等待用户确认，用户确认后，即可开始服务。</string>
+    <string name="order_deal_requestcommitsucceed">抢单提交成功，请勿重复提交!</string>
+    <string name="order_deal_requestorder_done">恭喜您抢单成功，请您按时服务该订单!</string>
+    <string name="order_deal_needcash">请您向客户收取现金</string>
+    <string name="order_deal_payalert">注意：如果收取金额与应收金额不符，请联系运控，否则您需要承担收款错误带来的损失。</string>
+    <string name="order_deal_confrim">确认收款</string>
+    <string name="order_deal_contact">联系运控</string>
+    <string name="notice_one">注意:请确认运送货物的发货地和收货地与订单信息是否一致, 如果行程一致请选择行程未变更；否则请选择行程变更，并确认行驶的公里数!如有不符，以实际运行公里数为准!</string>
+    <string name="comfirmJourney">确认行程</string>
+    <string name="unChangeJourney">行程未变更</string>
+    <string name="changeJourney">行程变更</string>
+    <string name="mileageChange">变更公里</string>
+    <string name="inputRealMileage">请输入实际公里数</string>
+    <string name="comfirm">确认</string>
+    <string name="comfirmCollect">确认收款</string>
+    <string name="needCollect">需收款金额</string>
+    <string name="money_zero">0元</string>
+    <string name="collect">收款</string>
+    <string name="unCollect">未收款</string>
+    <string name="collectSum">收款金额</string>
+    <string name="inputCollectSum">请输入收款金额</string>
+    <string name="userUnSupport">客户不支持</string>
+    <string name="userObjection">客户异议</string>
+    <string name="orderStatus">订单状态</string>
+    <string name="orderDetails">订单详情</string>
+    <string name="yuan">元</string>
+    <string name="update_kilometre_toast">请输入公里数</string>
+    <string name="update_kilometre_success">更新公里数成功</string>
+    <string name="update_kilometre_failures">更新公里数失败</string>
+    <string name="settlementsuccess">结算成功</string>
+    <string name="settlementfailures">结算异常</string>
+    <string name="alertdialog_title">提示</string>
+
+    <!-- like netease begin -->
+    <string name="p2refresh_head_load_more">加载更多</string>
+    <string name="p2refresh_end_load_more">更    多</string>
+    <string name="p2refresh_end_click_load_more">点击加载</string>
+    <string name="p2refresh_release_refresh">松开刷新</string>
+    <string name="p2refresh_pull_to_refresh">下拉刷新</string>
+    <string name="p2refresh_doing_head_refresh">正在刷新&#8230;</string>
+    <string name="p2refresh_doing_end_refresh">加载中&#8230;</string>
+    <string name="p2refresh_refresh_lasttime">最近更新&#160;&#058;&#160;</string>
+
+    <!-- JPUSH title begin -->
+    <string name="jpush_notification_title">您有新的订单信息!</string>
+    <string name="jpush_notification_msg_hasneworder">您有新的订单,订单号%1$s</string>
+    <string name="jpush_notification_msg_hasmodifyedorder">订单号%1$s的订单状态发生改变!</string>
+    <string name="jpush_notification_msg_hassnatchordersucceed">抢单成功,订单号%1$s</string>
+    <string name="jpush_notification_msg_hascancledorder">订单号%1$s的订单已经取消，请注意安排行程!</string>
+    <string name="jpush_notification_msg_hasavailableorder">新的订单%1$s来了，抓紧抢单了!</string>
+
+    <!-- JPUSH voice begin -->
+    <string name="jpush_notification_voice_hassnatchordersucceed">抢单成功，请前往当前订单查看</string>
+    
+    <!-- dialog 抢单成功后，系统会出现置顶弹窗(适用全局) -->
+    <string name="jpush_dialog_hassnatchordersucceed_title">抢单成功,请立即联系用户</string>
+    <string name="jpush_dialog_hassnatchordersucceed_msg">接通电话请注意服务用语：您好，我是蓝犀牛司机！ 不要忘记告诉用户预计多长时间到达哦</string>
+    <string name="jpush_dialog_hassnatchordersucceed_posi">联系用户</string>
+    <string name="jpush_dialog_hassnatchordersucceed_contact_later">稍后联系</string>
+    <string name="jpush_dialog_hassnatchordersucceed_i_know">我知道了</string>
+    
+    
+    <!-- DEVICE INFO  begin -->
+    <string name="PleaseOpenGps">为了节省您的网络流量，请在系统设置中，打开GPS卫星定位，并在服务中务必保持一直开启状态。</string>
+
+    <!-- CONFIRM ORDER begin -->
+    <string name="service_infos">服务详情</string>
+    <string name="service_miles">服务里程</string>
+    <string name="service_time_start">服务开始时间</string>
+    <string name="service_time_end">服务完成时间</string>
+    <string name="service_wait_time">等待时长</string>
+    <string name="service_night_period">夜间服务费</string>
+
+    <!-- PAY INFO begin -->
+    <string name="pay_infos">支付信息</string>
+    <string name="total_charge">总费用</string>
+    <string name="payed">已支付</string>
+    <string name="not_pay">未支付</string>
+    <string name="need_pay_by_money">需现金支付</string>
+
+    <!-- CHARGE RECEIVED begin -->
+    <string name="charge_received">收取费用</string>
+    <string name="click_and_input_receivedmoney">点击输入您已收取的费用</string>
+    <string name="alert_info">注意：请严格按照您收取的费用进行填写，如有填写错误，您需要承担错误带来的损失</string>
+    <!-- CHARGE RECEIVED end -->
+
+	
+    <!-- 确认订单页 -->
+    <string name="accept_money">确认无误，收款</string>
+    <string name="cash_receipts">现金收款</string>
+    <string name="lakala_receipts">拉卡拉收款</string>
+    <string name="notneed_money_receipts">无需收款</string>
+    <string name="contact_maintence_and_contrl">联系运控</string>
+    <string name="confrim_have_worked_hard">司机师傅辛苦了</string>
+
+    <!-- SERVICE  ORDER  begin -->
+    <string name="run_once">跑一趟： </string>
+    <string name="delive_time">发货时间：</string>
+    <string name="delive_info">发货信息：</string>
+    <string name="receive_info">收货信息：</string>
+    <string name="orderdeal_travel_distance">行驶里程：</string>
+    <string name="orderdeal_remark_info">备注信息：</string>
+    <string name="exchange_info">结算信息：</string>
+
+    <!-- navigator begin -->
+    <string name="navigator_dis_first">最短方案:%1$s公里 预计%2$s</string>
+    <string name="navigator_recommend">最优方案:%1$s公里 预计%2$s</string>
+    <string name="navigator_hour_min">%1$d小时%2$d分钟</string>
+    <string name="navigator_min">%1$d分钟</string>
+    <string name="navigator_schedule_changes">您已服务完成所有共%1$s个收货地,再次出发后无法使用导航</string>
+    <string name="navigator_planning_error">算路失败,请重试</string>
+    <string name="navigator_planning_fail">路径规划失败</string>
+
+    <!-- 累计收入页字段 -->
+    <string name="account_info">账户信息</string>
+    <string name="account_detail">账户详情</string>
+    <string name="account_withdrawal">账户提现</string>
+    <string name="balance_withdrawal">余额提现</string>
+    <string name="confirm_withdrawal">确认提现</string>
+
+    <!-- 抢单页子条目OrderDealInfoItemActivity页 -->
+    <string name="instant_or_reservation">即时服务/预约</string>
+    <string name="cur_order_bill">0元</string>
+    <string name="origin_place">发货地: </string>
+    <string name="cur_mileage">公里数: </string>
+    <string name="cur_remark">备注信息:</string>
+    <string name="cur_grab_order">抢单</string>
+    <string name="order_deal_info_getorder">订单加载中…</string>
+    <string name="order_deal_parse_timeout">该订单已失效</string>
+    <string name="order_deal_parse_info_error">订单信息获取失败</string>
+    <string name="order_deal_servetype_instant">即时服务</string>
+    <string name="order_deal_msg_failure">抢单不成功</string>
+    <string name="order_deal_msg_route_observer_failure">线路预览不成功</string>
+    <string name="order_deal_get_order_failure">抢单不成功</string>
+    <string name="order_deal_get_order_null">订单读取失败</string>
+
+    <!-- UserInfoFragment -->
+    <string name="myinfo_curr_version">当前版本:</string>
+
+    <!-- MyInfoActivity个人信息修改页 -->
+    <string name="myinfo_modify_person_info">个人信息</string>
+    <string name="myinfo_modify_net_error">获取个人信息失败,请重新登录</string>
+    <string name="myinfo_modify_net_noconnect">无网络连接,请在网络状态良好的情况下重试!</string>
+    <string name="myinfo_modify_confrim_save">资料已被修改,是否保存</string>
+    <string name="myinfo_modify_confrim_exit">直接退出</string>
+    <string name="myinfo_modify_confrim_tosave">回去保存</string>
+    <string name="myinfo_modify_getpic_error">获取图片失败,请重试</string>
+    <string name="myinfo_modify_cannot">审核通过,资料不能修改</string>
+    <string name="myinfo_modify_empty_name">未填写姓名</string>
+    <string name="myinfo_modify_empty_carnum">未填写车牌号</string>
+    <string name="myinfo_modify_sel_cartype">请选择车型</string>
+    <string name="myinfo_modify_upload_field">其他</string>
+    <string name="myinfo_modify_notneed_save">您没有修改任何内容,无需保存</string>
+    <string name="myinfo_modify_take_photo_error">拍照上传失败，请重试</string>
+    
+    <!-- UploadFilesPost -->
+    <string name="wait_upload_file">正在上传，请稍后....</string>
+
+    <!-- activity_myinfo_main.xml -->
+    <string name="myinfo_activity_portrait">头像</string>
+    <string name="myinfo_activity_driname">真实姓名</string>
+    <string name="myinfo_activity_driphone">手机号码</string>
+    <string name="myinfo_activity_resident_area">常住区域</string>
+    <string name="myinfo_activity_carmode">驾驶车型</string>
+    <string name="myinfo_activity_carnum">车牌号码</string>
+    <string name="myinfo_activity_id_pic">身份证照片</string>
+    <string name="myinfo_activity_driver_pic">驾驶证照片</string>
+    <string name="myinfo_activity_vehicle_pic">行驶证照片</string>
+    <string name="myinfo_activity_save">保存</string>
+
+    <!-- WaitListFragment -->
+    <string name="wait_order_login_timeout">登陆超时,请重新登录</string>
+    <string name="wait_order_login_url_error">路径跳转有误,请重新登录</string>
+    <string name="wait_order_nodata">暂无新订单</string>
+    <string name="driver_location">当前位置:%1$s</string>
+     <string name="get_driver_error">无法获取位置信息</string>
+
+    <!-- fragment_waitlist -->
+    <string name="fg_wait_start">开始抢单</string>
+
+    <!-- WaitOrderListAdapter -->
+    <string name="wait_adapter_instant_services">即时服务</string>
+    <string name="wait_adapter_today">(今天)%1$s</string>
+    <string name="wait_adapter_tomorrow">(明天)%1$s</string>
+    <string name="wait_adapter_after_tomorrow">(后天)%1$s</string>
+    <string name="wait_order_ing">正在抢单中&#8230;</string>
+    <string name="wait_order_cannot">不可抢单</string>
+    <string name="wait_order_already">已抢单</string>
+    <string name="wait_order_success">抢单成功</string>
+    <string name="wait_order_failure">抢单失败</string>
+    <string name="wait_order_waitfor">待用户选择</string>
+    <string name="wait_order_empty_distance">距离未填写</string>
+    <string name="wait_order_expect_mileage">%1$s(预计)</string>
+
+    <!-- CurrentOrderfragment -->
+    <string name="cur_order_login_timeout">登陆超时,请重新登录</string>
+    <string name="cur_order_nodata">暂无订单</string>
+    <!-- CurrentOrderAdapter -->
+    <string name="cur_adapter_service">%1$s(预计)</string>
+
+    <!-- 错过 + 历史 fragment -->
+    <string name="miss_order_nodata">暂无订单</string>
+    <string name="miss_order_nomoredata">没有更多订单啦</string>
+
+    <!-- 抢单详情页 -->
+    <string name="wait_order_needdriver">待用户选择</string>
+    <string name="wait_order_get_driving_route_result">路线预览失败</string>
+    <string name="wait_order_get_driving_route_ambiguous_addr">起终点或途经点地址有有歧义,路线预览失败</string>
+
+    <!-- 常用备注信息 -->
+    <string name="remark_title">备注信息:</string>
+    <string name="remark_none">无</string>
+
+    <!-- SelectCurrentCityActivity -->
+    <string name="city_nodata">城市信息获取失败</string>
+    <string name="city_current_selected">当前选择城市-</string>
+    <string name="city_get_loc">定位中&#8230;</string>
+    <string name="city_not_yet_open">(未开通城市))</string>
+    <string name="city_getdata_err">定位失败</string>
+
+    <!-- select_pic -->
+    <string name="select_pic_capture">拍照</string>
+    <string name="select_pic_photo">相册选择</string>
+    <string name="select_pic_cancel">取消</string>
+
+    <!-- LoadingDialog -->
+    <string name="loadingdialog_save">正在保存中&#8230;</string>
+    <string name="loadingdialog_nav">导航开启中&#8230;</string>
+    <string name="today">今天</string>
+    <string name="monday">星期一</string>
+    <string name="tuesday">星期二</string>
+    <string name="wednesday">星期三</string>
+    <string name="thursday">星期四</string>
+    <string name="friday">星期五</string>
+    <string name="saturday">星期六</string>
+    <string name="sunday">星期日</string>
+
+    <!-- common toast text -->
+    <string name="toast_no_net">您的网络连接不畅，请检查网络</string>
+    <string name="toast_already_exit">您已退出登陆,请重新登录</string>
+    <string name="toast_piggy_back_entry">非法进入,请重新登录</string>
+
+    <!-- MissedOrderActivity -->
+    <string name="miss_act_order">错过订单</string>
+
+    <!-- MissedOrderActivity -->
+    <string name="his_act_order">历史订单</string>
+
+    <!-- LocationService -->
+    <string name="loc_serv_net_error">您的网络连接不畅,请尝试退出后重新登录</string>
+
+    <!-- WebView -->
+    <string name="webview_load_error">网页加载出错了</string>
+    <string name="exit_title">温馨提示</string>
+    
+    <!-- PageRedirectActivity -->
+    <string name="pageredirect_load_err">糟糕,该链接已失效</string>
+
+    <!-- umeng事件统计 -->
+    <string name="event_page_hisList">pagehisList</string>
+    <string name="event_page_missList">pagemissList</string>
+
+    <!-- adapter_orderlist_item.xml -->
+    <string name="adapter_list_item_specifics">详情</string>
+    <string name="adapter_list_item_oid">订单号: </string>
+    <string name="adapter_list_item_dispatch">发货地: </string>
+    <string name="adapter_list_item_km">公里数: </string>
+
+    <!-- ActivityFragment -->
+    <string name="load_web_error">加载网页失败</string>
+    
+    
+</resources>

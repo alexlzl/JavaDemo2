@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:layout_marginBottom="@dimen/_12dp"
+    android:layout_marginLeft="@dimen/_14dp"
+    android:layout_marginRight="@dimen/_14dp"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/order_flow_lefttab_item"
+        style="@style/order_flow_bottom_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/service_over_btn_sel"
+        android:checked="true"
+        android:padding="7dp"
+        android:text="服务完成"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/order_flow_righttab_item"
+        style="@style/order_flow_bottom_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_weight="1"
+        android:background="@drawable/service_again_btn_sel"
+        android:padding="7dp"
+        android:text="再次出发"
+        android:textColor="@color/main_text_color"
+        android:textSize="20sp" />
+
+</LinearLayout>

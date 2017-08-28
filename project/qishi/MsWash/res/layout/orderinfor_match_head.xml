@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:background="@color/colorffff96"
+        android:gravity="center"
+        android:text="请确认以下信息与洗衣店提供的信息一致"
+        android:textColor="@color/color666666"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:paddingBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colore9fff4" >
+
+        <LinearLayout
+            android:id="@+id/orderinfor_match_head_userparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/orderinfor_match_head_usericon"
+                android:layout_width="58dp"
+                android:layout_height="58dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/drawable_bg"
+                android:src="@drawable/usericon" />
+
+            <TextView
+                android:maxWidth="80dp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:id="@+id/orderinfor_match_head_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:text="alex"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_toRightOf="@id/orderinfor_match_head_userparent"
+            android:id="@+id/orderinfor_match_head_shopparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="17dp"
+           >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="洗衣店:"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/orderinfor_match_head_shopname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345678"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/orderinfor_match_head_shopparent"
+            android:id="@+id/orderinfor_match_head_orderparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/orderinfor_match_head_userparent" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号:"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/orderinfor_match_head_ordersn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12345678"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/orderinfor_match_head_orderparent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/orderinfor_match_head_userparent"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/orderinfor_match_head_ordersn_shop"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:background="@drawable/search_bg"
+                android:gravity="center_vertical"
+                android:hint="请录入洗衣店订单标识码"
+                android:inputType="number"
+                android:paddingLeft="15dp"
+                android:textColorHint="@color/color999999"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/orderinfor_match_head_scan"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/scan_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ms_1px"
+        android:background="@color/color999999" />
+
+</LinearLayout>

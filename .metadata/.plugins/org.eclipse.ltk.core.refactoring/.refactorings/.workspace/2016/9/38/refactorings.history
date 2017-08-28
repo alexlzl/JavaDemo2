@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Demo_recyclerview_blog&apos; to &apos;RecyclerView分割线_动画&apos;" description="Rename resource &apos;Demo_recyclerview_blog&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Demo_recyclerview_blog" name="RecyclerView分割线_动画" stamp="1473848299107" updateReferences="true"/>
+</session>

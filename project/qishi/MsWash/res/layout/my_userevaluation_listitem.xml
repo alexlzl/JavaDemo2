@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="12dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="14dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/my_userevaluation_listitem_ordername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="订单号："
+            android:textColor="@color/color666666"
+            android:textSize="16sp" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/my_userevaluation_listitem_order_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12345678"
+            android:textColor="@color/color666666"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+    <!-- 洗衣质量 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/my_userevaluation_listitem_washquality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="洗衣质量："
+            android:textColor="@color/color666666"
+            android:textSize="16sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp" >
+
+            <ImageView
+                android:id="@+id/quality_one"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/quality_two"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/quality_three"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/quality_four"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/quality_five"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 服务态度 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/my_userevaluation_listitem_serviceattitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="服务态度："
+            android:textColor="@color/color666666"
+            android:textSize="16sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp" >
+
+            <ImageView
+                android:id="@+id/service_one"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/service_two"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/service_three"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/service_four"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/service_five"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 上门时间 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="44dp"
+        android:layout_marginTop="14dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/my_userevaluation_listitem_servicetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上门时间："
+            android:textColor="@color/color666666"
+            android:textSize="16sp" >
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp" >
+
+            <ImageView
+                android:id="@+id/wash_time_one"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/wash_time_two"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/wash_time_three"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/wash_time_four"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+
+            <ImageView
+                android:id="@+id/wash_time_five"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="5.8dp"
+                android:src="@drawable/star_full" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/my_userevaluation_listitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/colorf2f2f2"
+        android:gravity="center_vertical"
+        android:paddingLeft="18dp"
+        android:text="非常好"
+        android:textColor="@color/color666666"
+        android:textSize="16sp" />
+
+    <View
+        android:id="@+id/my_userevaluation_listitem_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ms_1px"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/color999999"
+        android:visibility="visible" />
+
+</LinearLayout>

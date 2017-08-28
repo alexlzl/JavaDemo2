@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="135dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/homepage_popupwindow_userinfor"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:background="@drawable/popupwindow_item_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="个人信息"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/homepage_popupwindow_order"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:background="@drawable/popupwindow_item_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="我的订单"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/homepage_popupwindow_evluation"
+        android:layout_width="135dp"
+        android:layout_height="47dp"
+        android:background="@drawable/popupwindow_item_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="我的评价"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

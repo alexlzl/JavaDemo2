@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/orderinfor_match_lv"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/orderinfor_match_bottomparent"
+        android:background="@color/white"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/orderinfor_match_bottomparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:paddingBottom="19dp" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/color26cbb2" />
+
+        <LinearLayout
+            android:id="@+id/orderinfor_match_checktime_parent"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="28dp"
+                android:text="完成洗衣时间:"
+                android:textColor="@color/color666666"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/orderinfor_match_checktime_iv"
+                android:layout_width="13dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="11dp"
+                android:src="@drawable/check_washover_time" />
+
+            <TextView
+                 android:id="@+id/orderinfor_match_checkdate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:text=""
+                android:textColor="@color/color666666"
+                android:textSize="17sp" />
+
+            <TextView
+                android:visibility="gone"
+                 android:id="@+id/orderinfor_match_checktime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:text=""
+                android:textColor="@color/color999999"
+                android:textSize="17sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/color26cbb2" />
+
+        <Button
+            android:id="@+id/orderinfor_match_confirm"
+            android:layout_width="155dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/order_list_button_bg_yellow"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="确认无误，保存"
+            android:textColor="@color/white"
+            android:textSize="19sp" />
+    </LinearLayout>
+
+</RelativeLayout>

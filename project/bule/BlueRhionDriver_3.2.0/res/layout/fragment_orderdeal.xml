@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 理解为某个服务中订单的详情页 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#eeeeee"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fillViewport="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:background="#30b0e8"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="7dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/run_once" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_transport_type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="3dp"
+                        android:layout_marginStart="3dp"
+                        android:text="@string/run_once"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_ordernum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/serviceorder_item_first_left_layout_style"
+                        android:text="@string/delive_time"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_delive_time"
+                        style="@style/serviceorder_item_first_layout_style"
+                        android:textColor="#565656" />
+                </LinearLayout>
+
+                <ImageView style="@style/seperate_line_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/serviceorder_item_left_layout_style"
+                        android:text="@string/delive_info"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="0.80"
+                        android:orientation="vertical" >
+
+                        <TextView
+                            android:id="@+id/orderdeal_delive_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#565656" />
+
+                        <TextView
+                            android:id="@+id/orderdeal_delive_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#565656" />
+                    </LinearLayout>
+
+                    <ImageButton
+                        android:id="@+id/orderdeal_delive_phone_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="7dp"
+                        android:background="#ffffff"
+                        android:contentDescription="@null"
+                        android:src="@drawable/delive_phone" />
+                </LinearLayout>
+
+                <ImageView style="@style/seperate_line_image" />
+
+                <LinearLayout
+                    android:id="@+id/orderdeal_receive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/serviceorder_item_left_layout_style"
+                        android:text="@string/orderdeal_travel_distance"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_kilometer"
+                        style="@style/serviceorder_item_layout_style"
+                        android:text="17公里"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView style="@style/seperate_line_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/serviceorder_item_left_layout_style"
+                        android:text="@string/orderdeal_remark_info"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_remark_info"
+                        style="@style/serviceorder_item_layout_style"
+                        android:text="我要跟车一人"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView style="@style/seperate_line_image" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        style="@style/serviceorder_item_left_layout_style"
+                        android:text="@string/exchange_info"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/orderdeal_exchange_info"
+                        style="@style/serviceorder_item_layout_style"
+                        android:text="需要向收货人收款300元"
+                        android:textColor="#565656"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/orderdeal_deallog_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Demo&apos; to &apos;数字动画&apos;" description="Rename resource &apos;Demo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Demo" name="数字动画" stamp="1478596261175" updateReferences="true"/>
+</session>

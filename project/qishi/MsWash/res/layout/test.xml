@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <Button
+        android:id="@+id/bt_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="intoList"
+        android:text="列表" />
+
+    <Button
+        android:id="@+id/bt_scan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="intoScan"
+        android:text="扫描" />
+
+    <Button
+        android:id="@+id/bt_na"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="nav"
+        android:text="导航" />
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="getLocation"
+        android:text="定位" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="位置"
+        android:textSize="20sp" />
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="true" />
+
+</LinearLayout>

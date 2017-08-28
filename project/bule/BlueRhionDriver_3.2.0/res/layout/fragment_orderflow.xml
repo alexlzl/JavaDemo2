@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 某个服务中订单的详情页 -->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F3F4F2"
+    android:fillViewport="true" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical" >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#f3f4f2" />
+
+        <View style="@style/seperate_line_gray" />
+
+        <!-- 发货地 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:text="发货地: "
+                android:textColor="#969696"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderinfo_item_placeofdispatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:singleLine="true"
+                android:textColor="#4f5f6f"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/seperate_line_image" />
+
+        <!-- 收货地 -->
+
+        <LinearLayout
+            android:id="@+id/orderinfo_item_3_grounp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <!-- 公里数 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="7dp"
+                android:text="公里数: "
+                android:textColor="#969696"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderinfo_item_kilometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:textColor="#4f5f6f"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View
+            style="@style/seperate_line_gray"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="8dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/nav_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/nav_button_selector"
+                android:text="导航"
+                android:textColor="@color/font_while" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="11dp"
+            android:background="#f3f4f2" />
+
+        <View style="@style/seperate_line_gray" />
+
+        <!-- 备注信息 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="7dp"
+            android:paddingTop="7dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="备注信息: "
+                android:textColor="#969696"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/orderinfo_item_placeofdispatch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="我有一台冰箱"
+                android:textColor="#4f5f6f"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View style="@style/seperate_line_gray" />
+
+        <!-- 收货信息:需要回单, 需要小推车, 用户更车 的显示 -->
+
+
+        <!-- 第三栏:包含订单费用,等待费用,需要收款信息的显示 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F3F4F2"
+            android:orientation="vertical"
+            android:padding="10dp" >
+
+            <!-- 订单费用 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/serviceorder_item_first_left_layout_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单费用"
+                    android:textColor="#565656"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/serviceorder_item_first_layout_style"
+                    android:text="120元"
+                    android:textColor="#565656" />
+            </LinearLayout>
+            <!-- 需要收款 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal" >
+
+                <TextView
+                    style="@style/serviceorder_item_first_left_layout_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="需要收款"
+                    android:textColor="#565656"
+                    android:textSize="14sp" />
+
+                <TextView
+                    style="@style/serviceorder_item_first_layout_style"
+                    android:text="120元"
+                    android:textColor="#565656" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 空白栏: 用来显示按钮 和 时间区域 -->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="#F3F4F2" />
+    </LinearLayout>
+
+</ScrollView>

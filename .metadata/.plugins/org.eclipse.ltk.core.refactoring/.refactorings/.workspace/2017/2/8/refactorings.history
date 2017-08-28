@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;类初始&apos; to &apos;类初始化1&apos;&#x0A;- Original element: &apos;类初始&apos;&#x0A;- Renamed element: &apos;类初始&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;类初始&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=类初始" name="类初始化1" references="true" stamp="1487831810491" version="1.0"/>
+</session>

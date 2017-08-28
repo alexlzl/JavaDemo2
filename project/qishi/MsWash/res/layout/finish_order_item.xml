@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="10dp" >
+
+    <ImageView
+        android:id="@+id/finish_order_item_is_neworder"
+        android:layout_width="28dp"
+        android:layout_height="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/order_is_new" />
+
+    <LinearLayout
+        android:id="@+id/appointment_order_list_item_userparent"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/appointment_order_list_item_middleparent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/finish_order_item_head"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/drawable_bg"
+            android:padding="1px"
+            android:scaleType="fitXY"
+            android:src="@drawable/usericon" />
+
+        <TextView
+            android:id="@+id/finish_order_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="alexalexalexalexalex"
+            android:textColor="@color/color666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 中间布局=================== -->
+
+    <LinearLayout
+        android:id="@+id/appointment_order_list_item_middleparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/appointment_order_list_item_userparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/appointment_order_list_item_location_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:src="@drawable/order_location" />
+
+            <TextView
+                android:id="@+id/finish_order_item_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="通州新华大街"
+                android:textColor="@color/color0064c8"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/appointment_order_list_item_phone_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:src="@drawable/order_phone" />
+
+            <TextView
+                android:id="@+id/finish_order_item_phonenum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="13469969346"
+                android:textColor="@color/color0064c8"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:src="@drawable/order_date" />
+
+            <TextView
+                android:id="@+id/finish_order_item_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="2月26日"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="21dp"
+                android:layout_height="22dp"
+                android:src="@drawable/finish_order_paytype" />
+
+            <TextView
+                android:id="@+id/finish_order_item_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="1.5公里"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/order_arrow" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="9dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="103dp" >
+
+        <Button
+            android:id="@+id/finish_order_item_bt"
+            android:layout_width="94dp"
+            android:layout_height="30dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/order_list_button_bg_yellow"
+            android:gravity="center"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:text="返厂重洗"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

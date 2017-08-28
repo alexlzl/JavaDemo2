@@ -1,0 +1,6 @@
+# view res/layout/main.xml #generated:88
+-keep class com.throrinstudio.android.common.libs.widgets.OkCancelBar { <init>(...); }
+
+# view AndroidManifest.xml #generated:15
+-keep class com.throrinstudio.android.example.validator.ValidatorExampleActivity { <init>(...); }
+

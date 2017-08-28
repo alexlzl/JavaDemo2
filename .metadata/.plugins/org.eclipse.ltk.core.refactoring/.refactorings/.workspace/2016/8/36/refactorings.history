@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Try_canvas_blog&apos; to &apos;自定义控件&apos;" description="Rename resource &apos;Try_canvas_blog&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Try_canvas_blog" name="自定义控件" stamp="1472639387235" updateReferences="true"/>
+</session>

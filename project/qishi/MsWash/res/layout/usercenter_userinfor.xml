@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/usercenter_userinfor_headicon"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/drawable_bg"
+        android:scaleType="fitXY"
+        android:src="@drawable/usercenter_usericon" />
+
+    <TextView
+        android:id="@+id/usercenter_userinfor_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercenter_userinfor_headicon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:maxWidth="80dp"
+        android:text="刘洲良刘洲良"
+        android:textColor="@color/color666666"
+        android:textSize="19sp" />
+
+    <LinearLayout
+        android:id="@+id/usercenter_userinfor_middle_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usercenter_userinfor_name"
+        android:layout_marginLeft="26dp"
+        android:layout_marginRight="26dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/bg_gray_corner_99"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="54dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="工号:"
+                    android:textColor="@color/color666666"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/usercenter_userinfor_jobnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:text="01530"
+                    android:textColor="@color/color666666"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ms_1px"
+                android:layout_gravity="bottom"
+                android:background="@color/color999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="54dp" >
+
+                <TextView
+                    android:scrollbars="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:text="手机号:"
+                    android:textColor="@color/color666666"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:id="@+id/usercenter_userinfor_phonenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:text="15510030090"
+                    android:textColor="@color/color666666"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/ms_1px"
+                android:layout_gravity="bottom"
+                android:background="@color/color999999" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="54dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:text="服务小区:"
+                android:textColor="@color/color666666"
+                android:textSize="17sp" />
+
+           
+
+                <com.minsheng.app.view.CustomScrollTextView
+                    android:id="@+id/usercenter_userinfor_service_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="14dp"
+                    android:text="之春路"
+                    android:textColor="@color/color666666"
+                    android:textSize="17sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/usercenter_userinfor_bt"
+        android:layout_width="107dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/usercenter_userinfor_middle_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:background="@drawable/bt_bg_selector"
+        android:gravity="center"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:text="退出登录"
+        android:textColor="@color/white"
+        android:textSize="19sp" />
+
+</RelativeLayout>

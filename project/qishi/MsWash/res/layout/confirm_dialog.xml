@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <LinearLayout
+        android:id="@+id/confirm_dialog_top_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/confirm_dialog_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:maxLines="1"
+            android:text="@string/exit_title"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/confirm_dialog_content_margin_v"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/confirm_dialog_content_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="20dp"
+            android:text=""
+            android:textColor="@color/color32"
+            android:textSize="13sp"
+            android:visibility="visible" />
+
+        <EditText
+            android:id="@+id/confirm_dialog_input_et"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button_gray_frame"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:hint="@string/input_pay_password"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:textColor="@color/color9696"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/confirm_dialog_top_ll"
+        android:layout_marginTop="30dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/confirm_dialog_left_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/e4e4e4"
+            android:orientation="vertical"
+            android:paddingRight="1dp"
+            android:paddingTop="1dp" >
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/confirm_dialog_left_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/keyboard_number_item"
+                android:gravity="center"
+                android:text="@string/ok"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/confirm_dialog_right_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/e4e4e4"
+            android:orientation="vertical"
+            android:paddingTop="1dp" >
+
+            <TextView
+                  android:textColor="@color/black"
+                android:id="@+id/confirm_dialog_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/keyboard_number_item"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="ms_1px">1px</dimen>
+    <dimen name="find_password_verification_code">170dp</dimen>
+    <dimen name="find_password_verification_code_size">17sp</dimen>
+    <dimen name="find_password_verification_code_iv">100dp</dimen>
+
+</resources>

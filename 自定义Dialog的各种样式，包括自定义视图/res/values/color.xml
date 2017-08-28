@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#55ff</color>  
+    <color name="layoutButton2">#d5d4d4</color>
+    <color name="imageCover">#eaeaea</color>
+    <color name="blueActionBar">#8ad5f0</color>
+    <color name="dialogColor01">#50c0e9</color>
+    <color name="dialogColor02">#ffb61c</color>  
+
+</resources>

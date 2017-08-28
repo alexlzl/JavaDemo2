@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;MainActivity&apos; to &apos;MainActivity1&apos;" description="Rename resource &apos;MainActivity&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MainActivity" name="MainActivity1" stamp="1476355780090" updateReferences="true"/>&#x0A;<refactoring comment="Rename resource &apos;MainActivity&apos; to &apos;自定义progressbar&apos;" description="Rename resource &apos;MainActivity&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/MainActivity" name="自定义progressbar" stamp="1476411603715" updateReferences="true"/>
+</session>

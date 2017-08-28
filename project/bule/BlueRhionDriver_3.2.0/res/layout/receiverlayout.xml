@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            style="@style/serviceorder_item_left_layout_style"
+            android:text="@string/receive_info"
+            android:textColor="#565656"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/orderdeal_receive_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#565656" />
+
+            <TextView
+                android:id="@+id/orderdeal_receive_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#565656" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/orderdeal_reveive_phone_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="7dp"
+            android:background="#ffffff"
+            android:contentDescription="@null"
+            android:src="@drawable/receive_phone" />
+    </LinearLayout>
+       <ImageView style="@style/seperate_line_image" />
+</LinearLayout>

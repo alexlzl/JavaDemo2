@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical"
+    android:paddingBottom="9dp" >
+
+    <LinearLayout
+        android:id="@+id/usercenter_myorderlist_item_userparent"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/usercenter_myorderlist_item_middleparent"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/usercenter_myorderlist_item_head"
+            android:layout_width="58dp"
+            android:layout_height="58dp"
+            android:background="@drawable/drawable_bg"
+            android:padding="1px"
+            android:scaleType="fitXY"
+            android:src="@drawable/usericon" />
+
+        <TextView
+            android:id="@+id/usercenter_myorderlist_item_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:text="alex"
+            android:textColor="@color/color666666"
+            android:textSize="16sp" />
+    </LinearLayout>
+    <!-- 中间布局=================== -->
+
+    <LinearLayout
+        android:id="@+id/usercenter_myorderlist_item_middleparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="23dp"
+        android:layout_toRightOf="@id/usercenter_myorderlist_item_userparent"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/usercenter_myorderlist_item_ordersn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="111111"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手机号:"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/usercenter_myorderlist_item_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="13469969346"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="bottom"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单金额:"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/usercenter_myorderlist_item_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="111"
+                android:textColor="@color/color666666"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="13dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="11dp"
+        android:src="@drawable/order_arrow" />
+
+</RelativeLayout>

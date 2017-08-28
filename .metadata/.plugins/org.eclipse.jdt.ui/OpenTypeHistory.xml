@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=TestJ4/src&lt;com.test{Foo.java[Foo" modifiers="0" timestamp="1465970457000"/>
+<typeInfo handle="=类初始化/src&lt;com.test{Parent.java[Parent" modifiers="1" timestamp="1487831947000"/>
+<typeInfo handle="=泛型/src&lt;com.test{Foo.java[Foo" modifiers="1" timestamp="1487928608000"/>
+<typeInfo handle="=子类继承父类的静态方法/src&lt;com.test{Fu.java[Fu" modifiers="1" timestamp="1486964347000"/>
+<typeInfo handle="=TestVolatile/\/Library\/Java\/JavaVirtualMachines\/jdk1.8.0_65.jdk\/Contents\/Home\/jre\/lib\/rt.jar&lt;java.lang(Thread.class[Thread" modifiers="33" timestamp="1444172124000"/>
+</typeInfoHistroy>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.test.EOrderTyper&apos; to &apos;枚举构造方法&apos;&#x0A;- Original project: &apos;枚举&apos;&#x0A;- Original element: &apos;com.test.EOrderTyper&apos;&#x0A;- Renamed element: &apos;com.test.枚举构造方法&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EOrderTyper&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.test{EOrderTyper.java[EOrderTyper" matchStrategy="1" name="枚举构造方法" qualified="false" references="true" similarDeclarations="false" stamp="1487916169315" textual="false" version="1.0"/>
+</session>

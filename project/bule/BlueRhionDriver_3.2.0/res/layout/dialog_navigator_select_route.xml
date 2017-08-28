@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 选择最短方案 和 最优方案的alertdialog -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/navigator_dis_first"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/navigator_dialog_first_bg"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/navigator_dis_first_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:text="最短方案:%1$s公里 预计%2$s"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d1d1d1" />
+
+    <LinearLayout
+        android:id="@+id/navigator_avoid_jam"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#39b7e0"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp" >
+
+        <TextView
+            android:id="@+id/navigator_recommend_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:text="@string/navigator_recommend"
+            android:textColor="#ffffff"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d1d1d1" />
+
+    <Button
+        android:id="@+id/navigator_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/navigator_dialog_end_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="取消"
+        android:textColor="#39b7e0"
+        android:textSize="14sp" />
+
+</LinearLayout>

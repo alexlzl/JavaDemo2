@@ -1,0 +1,689 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <!-- 标题布局 -->
+
+        <RelativeLayout
+            android:id="@+id/homepage_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/color26cbb2" >
+
+            <Button
+                android:id="@+id/homepage_menu"
+                android:layout_width="32dp"
+                android:layout_height="19dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:background="@drawable/usercenter_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/homepage_message_parent"
+                android:layout_width="40dp"
+                android:layout_height="34dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:clickable="true"
+                android:descendantFocusability="blocksDescendants"
+                android:focusable="true" >
+
+                <Button
+                    android:id="@+id/homepage_message_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="22dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/message_icon" />
+
+                <Button
+                    android:id="@+id/homepage_message_num"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- 搜素区域 -->
+
+        <RelativeLayout
+             android:layout_marginRight="20dp"
+            android:id="@+id/top_panel"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp" >
+
+            <RelativeLayout
+                android:id="@+id/search_edit_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_toLeftOf="@+id/homepage_scan_search"
+                android:background="@drawable/search_bg" >
+
+                <ImageView
+                    android:id="@+id/homepage_search_icon"
+                    android:layout_width="19dp"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/search_icon" />
+
+                <EditText
+                    android:id="@+id/homepage_search_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_search_icon"
+                    android:background="@null"
+                    android:gravity="left|center_vertical"
+                    android:hint="请输入订单号或者用户手机号"
+                    android:maxLines="2"
+                    android:textSize="17sp" >
+                </EditText>
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/homepage_scan_search"
+                android:layout_width="29dp"
+                android:layout_height="29dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/scan_icon" />
+
+            <TextView
+                android:id="@+id/homepage_search_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="17dp"
+                android:text="搜索"
+                android:textColor="@color/color26cbb2"
+                android:textSize="17sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+        <!-- 列表区域 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 预约订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_appointorder_item"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_appointorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/appointorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_appointorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_appointorder_iv"
+                    android:text="预约订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_appointorder_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_appointorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_appointorder_totalnum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_appointorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_appointorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+            <!-- 送店订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_sendshop_parent"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_sendshoporder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/sendshoporder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_sendshoporder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_sendshoporder_iv"
+                    android:text="送店订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_sendshop_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_sendshoporder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_sendshop_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_sendshoporder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_sendshoporder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+            <!-- 取衣订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_getclothes_order_parent"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_getbackorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/getbackorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_getbackorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_getbackorder_iv"
+                    android:text="取衣订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_getback_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_getbackorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_getback_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_getbackorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_getbackorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+            <!-- 送衣订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_sendclothesback_order_parent"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_sendbackorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/sendbackorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_sendbackorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_sendbackorder_iv"
+                    android:text="送衣订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_sendclothes_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_sendbackorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_sendclothes_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_sendbackorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_sendbackorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+            <!-- 当月已经完成订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_finish_order"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_finishorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/finishorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_finishorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_finishorder_iv"
+                    android:text="当月已完成订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_finishorder_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_finishorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_finishorder_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_finishorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_finishorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+            <!-- 重洗订单 -->
+
+            <RelativeLayout
+                android:id="@+id/homepage_wash_again"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_againorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/againorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_againorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_againorder_iv"
+                    android:text="重洗订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_washagain_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_againorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_washagain_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_againorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_againorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+
+            <!-- 已取消的订单 -->
+
+            <RelativeLayout
+                android:visibility="visible"
+                android:id="@+id/homepage_wash_cancle"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@color/colore9fff4" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/color26cbb2"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/ms_1px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/color26cbb2" />
+
+                <ImageView
+                    android:id="@+id/homepage_cancleorder_iv"
+                    android:layout_width="26dp"
+                    android:layout_height="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="21dp"
+                    android:src="@drawable/cancleorder_iv" />
+
+                <TextView
+                    android:id="@+id/homepage_cancleorder_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="11dp"
+                    android:layout_toRightOf="@id/homepage_cancleorder_iv"
+                    android:text="已取消订单"
+                    android:textColor="@color/color666666"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/homepage_cancle_notread_num"
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_toRightOf="@id/homepage_cancleorder_tv"
+                    android:background="@drawable/home_messagenum_bg"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/homepage_cancle_total_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="47dp"
+                    android:layout_toLeftOf="@+id/homepage_cancleorder_arrow"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/homepage_cancleorder_arrow"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/home_orderlist_arrow" />
+            </RelativeLayout>
+        </LinearLayout>
+        <!-- 底部================== -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <SeekBar
+                    android:id="@+id/homepage_seekbar"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:max="100"
+                    android:maxHeight="20dp"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="58dp" />
+
+                <TextView
+                    android:id="@+id/homepage_carcapacity_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/homepage_seekbar"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="车载容量"
+                    android:textColor="@color/color666666"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="@dimen/ms_1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/color999999" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/homepage_state_tv"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorfbb400"
+                    android:textSize="23sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="9dp"
+                    android:text="状态"
+                    android:textColor="@color/color666666"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

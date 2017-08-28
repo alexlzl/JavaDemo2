@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <drawable name="transparent">#00000000</drawable>
+    <!-- actionbar popmenu item begin -->
+    <drawable name="actionbar_popmenu_item_selected_press">#4D81DA</drawable>
+    <!-- actionbar popmenu end -->
+
+</resources>

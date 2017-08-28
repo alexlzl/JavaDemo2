@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <string-array name="all_local_database">
+        <item>
+           	CREATE TABLE IF NOT EXISTS currentorder (_id INTEGER NOT NULL PRIMARY KEY, 
+            OrderFlag INTEGER, OrderId INTEGER NOT NULL UNIQUE, OrderType INTEGER, PaymentMode INTEGER, ServeType INTEGER, CountState INTEGER, CountBegin INTEGER, CountTimeDifference INTEGER, Kilometer TEXT, CashPay INTEGER, PayFlag INTEGER, noPay TEXT,ShippingContent TEXT, Remark TEXT, PickupMan TEXT, PickupPhone TEXT, PickupAddress TEXT, PickupAddressLng TEXT, PickupAddressLat TEXT, TransTime LONG, ArriveCount INTEGER, OrderBill TEXT);
+        </item>
+    
+        <item>
+            CREATE TABLE IF NOT EXISTS currentdeliver (_id INTEGER NOT NULL PRIMARY KEY, 
+            Id INTEGER NOT NULL, OrderId INTEGER NOT NULL, TakeMan TEXT, TakePhone TEXT, ArriveTime LONG, LeaveTime LONG, DeliverOrder INTEGER DEFAULT(1), DeliverAddress TEXT, DeliverAddressLng TEXT, DeliverAddressLat TEXT, FOREIGN KEY (OrderId) REFERENCES currentorder(OrderId) DEFERRABLE INITIALLY IMMEDIATE);
+        </item>
+        
+        <item >
+            CREATE TABLE IF NOT EXISTS currentorderdeal (_id INTEGER NOT NULL PRIMARY KEY,
+            OrderId INTERGER, OrderFlag INTERGER, Time TEXT);
+        </item>
+    
+        <item>
+            CREATE TRIGGER IF NOT EXISTS currentorder_deleted_trigger AFTER DELETE ON currentorder FOR EACH ROW BEGIN DELETE FROM currentdeliver WHERE OrderId = old.OrderId; END;
+        </item>
+        
+        <item>
+            CREATE TABLE IF NOT EXISTS historyorder (_id INTEGER NOT NULL PRIMARY KEY, 
+            OrderFlag INTEGER, OrderId INTEGER NOT NULL UNIQUE, OrderType INTEGER, PaymentMode INTEGER, ServeType INTEGER, CountState INTEGER, CountBegin INTEGER, CountTimeDifference INTEGER, Kilometer TEXT, CashPay INTEGER, PayOrderFlag INTEGER, noPay TEXT,ShippingContent TEXT, Remark TEXT, PickupMan TEXT, PickupPhone TEXT, PickupAddress TEXT, PickupAddressLng TEXT, PickupAddressLat TEXT, TransTime LONG, ArriveCount INTEGER, OrderBill TEXT);
+        </item>
+    
+        <item>
+            CREATE TABLE IF NOT EXISTS historydeliver (_id INTEGER NOT NULL PRIMARY KEY, 
+            Id INTEGER NOT NULL, OrderId INTEGER NOT NULL, TakeMan TEXT, TakePhone TEXT, ArriveTime LONG, LeaveTime LONG, DeliverOrder INTEGER DEFAULT(1), DeliverAddress TEXT, DeliverAddressLng TEXT, DeliverAddressLat TEXT, FOREIGN KEY (OrderId) REFERENCES historyorder(OrderId) DEFERRABLE INITIALLY IMMEDIATE);
+        </item>
+    
+        <item>
+             CREATE TRIGGER IF NOT EXISTS historyorder_deleted_trigger AFTER DELETE ON historyorder FOR EACH ROW BEGIN DELETE FROM historydeliver WHERE OrderId = old.OrderId; END;
+        </item>
+    
+        <item>
+             CREATE TABLE IF NOT EXISTS locationinfo (_id integer NOT NULL PRIMARY KEY,
+             city TEXT, address TEXT, latitude DOUBLE not null, longitude DOUBLE not null, time TEXT, locationStatus INTEGER, uploadFlag INTEGER);
+        </item>
+
+        <item>
+             CREATE TABLE IF NOT EXISTS unreadnotification (_id integer NOT NULL PRIMARY KEY,
+             OrderId INTEGER, OrderFlag INTEGER, Read INTEGER DEFAULT(1));
+        </item>
+    
+        <item>
+            CREATE TRIGGER IF NOT EXISTS unreadnotification_deleted_trigger AFTER DELETE ON currentorder FOR EACH ROW BEGIN DELETE FROM unreadnotification WHERE OrderId = old.OrderId; END;
+        </item>
+        
+    </string-array>
+    
+    <string-array name="all_drop_database">
+        <item>
+            DROP TABLE IF EXISTS currentorder ;</item>
+    
+        <item>
+            DROP TABLE IF EXISTS  currentdeliver ;
+		</item>
+        
+        <item >
+            DROP TABLE IF EXISTS  currentorderdeal;
+        </item>
+    
+        <item>
+            DROP TRIGGER IF EXISTS currentorder_deleted_trigger; 
+        </item>
+    
+        <item>
+            DROP TABLE IF EXISTS  historyorder;
+        </item>
+    
+        <item>
+            DROP TABLE IF EXISTS  historydeliver; 
+        </item>
+    
+        <item>
+            DROP TRIGGER IF EXISTS historyorder_deleted_trigger;
+        </item>
+    
+        <item>
+             DROP TABLE IF EXISTS  locationinfo;
+        </item>
+
+        <item>
+             DROP TABLE IF EXISTS  unreadnotification;
+        </item>
+    
+        <item>
+            DROP TRIGGER IF EXISTS unreadnotification_deleted_trigger;
+        </item>
+        
+    </string-array>
+    
+</resources>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/cn.bluerhino.driver"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_bg" >
+
+    <cn.bluerhino.driver.view.SingleLayoutListView
+        android:id="@+id/fragment_fragment_wait_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/fragment_bg"
+        android:dividerHeight="10dp"
+        android:fadingEdgeLength="0dp" />
+
+    <FrameLayout
+        android:id="@+id/curtain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" >
+
+        <Button
+            android:id="@+id/resume_push"
+            style="@style/button_rounded_blue_style"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="50dp"
+            android:text="@string/fg_wait_start"
+            android:textSize="17sp"
+            android:visibility="invisible" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/wait_list_Liner_location_back"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp" >
+
+        <cn.bluerhino.driver.view.MarqueeView
+            android:id="@+id/driver_local_text"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/round_white_gray_waitlist"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:maxLines="1"
+            android:paddingBottom="3dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="3dp"
+            android:scrollHorizontally="true"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="17sp" />
+
+        <RelativeLayout
+            android:id="@+id/refresh_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_white_gray_waitlist"
+            android:paddingBottom="5dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="5dp" >
+
+            <ImageView
+                android:id="@+id/round_img"
+                android:layout_width="20dp"
+                android:layout_height="21dp"
+                android:background="@drawable/reload" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/loading_animators"
+        android:visibility="gone" />
+
+</RelativeLayout>

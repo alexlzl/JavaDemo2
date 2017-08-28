@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#223333"
+    android:orientation="vertical" >
+
+    <include layout="@layout/common_title" />
+
+    <View style="@style/seperate_line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/bg_second" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/my_portrait_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:background="@drawable/myinfo_layout_sel"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/myinfo_activity_portrait" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="65dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal" >
+
+                            <cn.bluerhino.driver.view.CircleNetImage
+                                android:id="@+id/driver_img"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginRight="10dp"
+                                android:padding="5dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="20dp"
+                                android:src="@drawable/right_arrow" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:text="@string/myinfo_activity_driname" />
+
+                        <EditText
+                            android:id="@+id/driver_name"
+                            style="@style/myinfo_main_text_2"
+                            android:background="@null"
+                            android:maxLength="5"
+                            android:singleLine="true"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:singleLine="true"
+                            android:text="@string/myinfo_activity_driphone" />
+
+                        <TextView
+                            android:id="@+id/driver_phone"
+                            style="@style/myinfo_main_text_2" />
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/resident_area_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/myinfo_layout_sel"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:text="@string/myinfo_activity_resident_area" />
+
+                        <TextView
+                            android:id="@+id/city_info"
+                            style="@style/myinfo_main_text_2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/white"
+                    android:orientation="vertical" >
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:id="@+id/carmode_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/myinfo_layout_sel"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:text="@string/myinfo_activity_carmode" />
+
+                        <TextView
+                            android:id="@+id/carmode_info"
+                            style="@style/myinfo_main_text_2" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
+                            android:src="@drawable/right_arrow" />
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            style="@style/myinfo_main_text_1"
+                            android:text="@string/myinfo_activity_carnum" />
+
+                        <EditText
+                            android:id="@+id/driver_carnum"
+                            style="@style/myinfo_main_text_2"
+                            android:background="@null"
+                            android:singleLine="true"
+                            android:maxLength="8"
+                            android:text="" />
+                    </LinearLayout>
+
+                    <View style="@style/seperate_line_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@android:color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <!-- 服务单数默认不可点击 -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <View style="@style/seperate_line_gray" />
+
+                            <!-- 身份证 -->
+                            <cn.bluerhino.driver.view.CircleNetImage
+                                android:id="@+id/info_pic"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp" />
+
+                            <TextView
+                                style="@style/myinfo_main_text_piclayout"
+                                android:text="@string/myinfo_activity_id_pic" />
+
+                            <View style="@style/seperate_line_gray" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:src="#D1D1D1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <View style="@style/seperate_line_gray" />
+
+                            <cn.bluerhino.driver.view.CircleNetImage
+                                android:id="@+id/driver_pic"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp" />
+
+                            <TextView
+                                style="@style/myinfo_main_text_piclayout"
+                                android:text="@string/myinfo_activity_driver_pic" />
+
+                            <View style="@style/seperate_line_gray" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:src="#D1D1D1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center_horizontal"
+                            android:orientation="vertical" >
+
+                            <View style="@style/seperate_line_gray" />
+
+                            <cn.bluerhino.driver.view.CircleNetImage
+                                android:id="@+id/vehicle_pic"
+                                android:layout_width="65dp"
+                                android:layout_height="65dp"
+                                android:layout_marginTop="10dp"
+                                android:padding="5dp" />
+
+                            <TextView
+                                style="@style/myinfo_main_text_piclayout"
+                                android:text="@string/myinfo_activity_vehicle_pic" />
+
+                            <View style="@style/seperate_line_gray" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <Button
+                        android:id="@+id/commit_driver_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/nav_button_selector"
+                        android:gravity="center"
+                        android:text="@string/myinfo_activity_save"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/curtain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#12122543"
+            android:visibility="gone" >
+        </FrameLayout>
+    </RelativeLayout>
+
+</LinearLayout>

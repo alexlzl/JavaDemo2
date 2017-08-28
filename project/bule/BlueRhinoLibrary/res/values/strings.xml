@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="servererror">服务器错误</string>
+    <string name="networkerror">网络不给力，请检查网络</string>
+    <string name="timeouterror">网络连接超时</string>
+    <string name="parseerror">内容解析错误</string>
+    <string name="othererror">出错啦</string>
+    <string name="timesynchronization_timeout">时间同步超时</string>
+
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/myinfo_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <!-- 资费说明 -->
+    <LinearLayout
+        android:id="@+id/myinfo_item1"
+        style="@style/myinfo_item_style" >
+
+        <TextView
+            android:id="@+id/item1_head"
+            style="@style/myinfo_item_first_col_style.myinfo_item_second_col_style"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/divider_line"/>
+
+</LinearLayout>

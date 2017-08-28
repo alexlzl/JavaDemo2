@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;继承&apos; to &apos;继承父类相同变量&apos;" description="Rename resource &apos;继承&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/继承" name="继承父类相同变量" stamp="1479209796959" updateReferences="true"/>
+</session>

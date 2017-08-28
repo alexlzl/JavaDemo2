@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="jump_url_path_name">
+
+        <!-- 账户信息页面 (累计收入页) -->
+        <item>账户信息</item>
+        <!-- 账户详情页面 (账户信息 右上角 账户详情页 ) -->
+        <item>账户详情</item>
+        <!-- 顾客评分页面 -->
+        <item>顾客评分</item>
+        <!-- 推荐客户页面 -->
+        <item>推荐客户</item>
+        <!-- 司机排名页面 -->
+        <item>本月订单数排名</item>
+    </string-array>
+    <string-array name="tag_str_array">
+        <item>需要搬运</item>
+        <item>需要代收款</item>
+        <item>需要回单</item>
+        <item>需要跟车</item>
+        <item>需要小推车</item>
+    </string-array>
+    <string-array name="bar_text_array">
+        <item>错过订单</item>
+        <item>历史订单</item>
+        <item>""</item>
+        <item>联系运控</item>
+    </string-array>
+
+</resources>

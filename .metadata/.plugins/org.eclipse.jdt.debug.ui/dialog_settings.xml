@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item value="500" key="SashWeightTree"/>
+		<item value="500" key="SashWeightDetails"/>
+		<item value="600" key="WIDTH"/>
+		<item value="156" key="HEIGHT"/>
+	</section>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=类初始化/src&amp;lt;com.test{InitialOrderTest.java[InitialOrderTest&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=类初始化/src&amp;lt;com.test{SubClass.java[SubClass&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=类初始化/src&amp;lt;com.test{TestOrder.java[TestOrder&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=TestVolatile/src&amp;lt;com.test{Counter.java[Counter&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=TestVolatile/src&amp;lt;com.test{TestThread.java[TestThread&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=TestVolatile/src&amp;lt;com.test{Test.java[Test&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=TestVolatile/src&amp;lt;com.test{TestThread1.java[TestThread1&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=终止线程/src&amp;lt;com.test{ThreadFlag.java[ThreadFlag&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=终止线程/src&amp;lt;com.test{ThreadInterrupt.java[ThreadInterrupt&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=终止线程/src&amp;lt;com.test{TestThread2.java[TestThread2&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=继承父类相同变量/src&amp;lt;com.test{SubClass.java[SubClass&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=继承父类相同变量/src&amp;lt;com.test{Test.java[Test&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=枚举/src&amp;lt;com.test{包含抽象方法的枚举类.java[包含抽象方法的枚举类&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=枚举/src&amp;lt;com.test{包含抽象方法的枚举类.java[包含抽象方法的枚举类^TIMES[&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<section name="DialogBoundsSettings">
+			<item value="383" key="DIALOG_WIDTH"/>
+			<item value="1|.SF NS Text|11.0|0|COCOA|1|.SFNSText" key="DIALOG_FONT_NAME"/>
+			<item value="432" key="DIALOG_HEIGHT"/>
+			<item value="332" key="DIALOG_X_ORIGIN"/>
+			<item value="149" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

@@ -1,0 +1,290 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minsheng.wash"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+    <!-- 设置不同屏幕的支持 -->
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:xlargeScreens="true" >
+    </supports-screens>
+    <!-- 百度地图  start================== -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 百度地图end========================= -->
+
+
+    <!-- 百度定位start========================= -->
+    <!-- 这个权限用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <!-- 这个权限用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <!-- 写入扩展存储，向扩展卡写入数据，用于写入离线定位数据 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" >
+    </uses-permission>
+    <!-- 访问网络，网络定位需要上网 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" >
+    </uses-permission>
+    <!-- 允许应用读取低级别的系统日志文件 -->
+    <uses-permission android:name="android.permission.READ_LOGS" >
+    </uses-permission>
+    <!-- 百度定位end========================== -->
+
+
+    <!-- 百度导航start=============== -->
+    <!-- 使用导航功能所需权限 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCES_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 百度导航end================================ -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 扫描二维码 -->
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:name="com.minsheng.app.application.MsApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/msxq_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="YsoYgHFXWrVTPtr2NU6DCCOq" />
+        <!-- 百度服务 -->
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 登录页面 -->
+        <activity
+            android:name="com.minsheng.app.module.login.Login"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <!-- 找回密码第一步 -->
+        <activity
+            android:name="com.minsheng.app.module.login.ForgetPassWordStepOne"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 找回密码第二步 -->
+        <activity
+            android:name="com.minsheng.app.module.login.ForgetPassWordStepTwo"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 主页面 -->
+
+        <activity
+            android:name="com.minsheng.app.module.main.HomeActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 消息列表页 -->
+        <activity
+            android:name="com.minsheng.app.module.usercenter.MyMessage"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 消息详情页面 -->
+        <activity
+            android:name="com.minsheng.app.module.usercenter.MyMessageDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 导航页面 -->
+        <activity
+            android:name="com.minsheng.app.navigation.BNavigatorActivity"
+            android:configChanges="orientation|screenSize|keyboard|keyboardHidden" />
+        <!-- 二维码扫描界面 -->
+        <activity
+            android:name="com.minsheng.app.scanning.activity.CaptureActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 完善订单页面 -->
+        <activity
+            android:name="com.minsheng.app.module.appointmentorder.CompleteOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 完善订单确认页面 -->
+        <activity
+            android:name="com.minsheng.app.module.appointmentorder.CompleteOrderConfirm"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 预约订单列表页面 -->
+        <activity
+            android:name="com.minsheng.app.module.appointmentorder.AppointmentOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 调用地图页面 -->
+        <activity
+            android:name="com.minsheng.app.module.ordermap.MsMapView"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 我的评价页面 -->
+        <activity
+            android:name="com.minsheng.app.module.usercenter.MyUserEvaluationNew"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 通用订单详情页面 -->
+        <activity
+            android:name="com.minsheng.app.module.orderdetail.UniversalOrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 预约订单详情页面 -->
+        <activity
+            android:name="com.minsheng.app.module.orderdetail.AppointmentOrderDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人中心我的订单列表 -->
+        <activity
+            android:name="com.minsheng.app.module.usercenter.MyOrderList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 个人信息页面 -->
+        <activity
+            android:name="com.minsheng.app.module.usercenter.UserInfor"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 送店订单 -->
+        <activity
+            android:name="com.minsheng.app.module.sendshoporder.SendShopOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 送店订单，信息修改页面 -->
+        <activity
+            android:name="com.minsheng.app.module.sendshoporder.OrderModified"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 订单匹配页面 -->
+        <activity
+            android:name="com.minsheng.app.module.sendshoporder.OrderInforMatch"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 取衣订单 -->
+        <activity
+            android:name="com.minsheng.app.module.getclothesorder.GetClothesOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 送衣订单 -->
+        <activity
+            android:name="com.minsheng.app.module.sendclothesbackorder.SendClothesBackOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 已完成订单 -->
+        <activity
+            android:name="com.minsheng.app.module.finishorder.FinishOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 重洗订单页面 -->
+        <activity
+            android:name="com.minsheng.app.module.againorder.WashAgain"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 重洗订单详情 -->
+        <activity
+            android:name="com.minsheng.app.module.orderdetail.WashAgainDetail"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 搜索列表页面 -->
+        <activity
+            android:name="com.minsheng.app.module.search.SearchOrderList"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 新扫描一维码界面 -->
+        <activity
+            android:name="com.minsheng.app.scan_one.CameraActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 取消订单 -->
+        <activity
+            android:name="com.minsheng.app.module.cancelorder.CancelOrder"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 推送消息服务 -->
+        <service
+            android:name="com.minsheng.app.module.pushservice.PushService"
+            android:enabled="true"
+            android:process=":remote" >
+        </service>
+        <!-- 开机启动广播启动推动服务 -->
+        <receiver android:name="com.minsheng.app.module.pushservice.BootBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+
+                <category android:name="android.intent.category.HOME" />
+            </intent-filter>
+        </receiver>
+        <!-- 广播接受订单更新 -->
+        <receiver android:name="com.minsheng.app.module.main.HomeActivity$InnerReceiver" >
+            <intent-filter>
+                <action android:name="com.min.musicdemo.action.NUM_COUNT" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.min.musicdemo.action.MUSIC_LIST" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

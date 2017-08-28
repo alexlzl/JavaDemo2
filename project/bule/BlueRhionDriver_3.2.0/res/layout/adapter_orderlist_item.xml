@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <!-- 子条目列表分为三列,这是第一列:图标+文字 显示为马上 或 预订订单 -->
+
+    <include layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <ImageView
+            android:id="@+id/orderinfo_item_charStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/char_ma" />
+
+        <TextView
+            android:id="@+id/orderinfo_item_ordertime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/cur_adapter_service"
+            android:textColor="#4f5f6f"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/orderinfo_item_orderbill"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/warn_text_color"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/orderinfo_spec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_weight="1"
+            android:gravity="right" />
+    </LinearLayout>
+
+    <!-- 子条目列表分为三列,这是第二列:1.左部分依次是:发货地 收货地 公里数  2.右边是抢单按钮 + '距您多少公里' -->
+    <!-- item 2 -->
+
+    <include layout="@layout/divider_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <!-- 订单号 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/adapter_list_item_oid"
+                    android:textColor="#969696"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_item_ordernumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4f5f6f"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 发货地 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="@string/adapter_list_item_dispatch"
+                    android:textColor="#969696"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_item_placeofdispatch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#4f5f6f"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <!-- 收货地 -->
+
+            <LinearLayout
+                android:id="@+id/orderinfo_item_3_grounp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- 公里数 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/adapter_list_item_km"
+                    android:textColor="#969696"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/orderinfo_item_kilometer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:textColor="#4f5f6f"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 抢单 -->
+
+        <LinearLayout
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/orderinfo_item_state_button"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/order_button_selector"
+                android:textColor="@color/font_while"
+                android:textSize="@dimen/_16sp" />
+
+            <TextView
+                android:id="@+id/orderinfo_item_killmeters_change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:maxWidth="70dp"
+                android:paddingBottom="3dp"
+                android:paddingTop="4dp"
+                android:textColor="#969696"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 单条水平线 -->
+
+    <View
+        android:id="@+id/seperate_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#d1d1d1" />
+
+    <!-- 子条目列表分为三列,这是第三列:分别是三个选项 -->
+
+    <GridView
+        android:id="@+id/remark_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="9dp"
+        android:columnWidth="100dp"
+        android:horizontalSpacing="9dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:verticalSpacing="8dp" >
+    </GridView>
+
+    <include layout="@layout/divider_line" />
+
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Class对象&apos; to &apos;反射&apos;&#x0A;- Original element: &apos;Class对象&apos;&#x0A;- Renamed element: &apos;Class对象&apos;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Class对象&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Class对象" name="反射" references="true" stamp="1488354210367" version="1.0"/>
+</session>

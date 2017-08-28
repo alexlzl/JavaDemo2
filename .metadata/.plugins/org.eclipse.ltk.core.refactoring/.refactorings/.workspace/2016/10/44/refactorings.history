@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;PictureDemo&apos; to &apos;图片选中裁剪&apos;" description="Rename resource &apos;PictureDemo&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/PictureDemo" name="图片选中裁剪" stamp="1477301610169" updateReferences="true"/>
+</session>
